@@ -1,16 +1,16 @@
 ////////////////////////////////////////////////////////////////////////////////////////////
 
-g++ -DTYPES=FIXED\(32,16\) -DSIZE=S\(18,36\),S\(36,84\)  -std=c++20 -O2 main.cpp scary.h -o main2.exe
+g++ -DTYPES=FIXED\(32,16\) -DSIZE=S\(18,36\),S\(36,84\)  -std=c++20 -O2 main.cpp scary.h -o main.exe
 ./main.exe --v-flow-type=FIXED\(32,16\)  --v-type=FIXED\(32,16\) --p-type=FIXED\(32,16\) input.txt
   
 ////////////////////////////////////////////////////////////////////////////////////////////
   
-g++ -DTYPES=FAST_FIXED\(32,16\)  -std=c++20 -O2 -O3 main2.cpp scary.h -o main.exe
+g++ -DTYPES=FAST_FIXED\(32,16\)  -std=c++20 -O2 -O3 main.cpp scary.h -o main.exe
 ./main.exe --v-flow-type=FAST_FIXED\(32,16\)  --v-type=FAST_FIXED\(32,16\) --p-type=FAST_FIXED\(32,16\) input.txt
   
  ////////////////////////////////////////////////////////////////////////////////////////////
   
-g++ -DTYPES=FIXED\(32,16\),FIXED\(8,6\) -DSIZE=S\(36,16\)  -std=c++20 -O2 -O3 main.cpp scary.h -o main2.exe
+g++ -DTYPES=FIXED\(32,16\),FIXED\(8,6\) -DSIZE=S\(36,16\)  -std=c++20 -O2 -O3 main.cpp scary.h -o main.exe
 ./main.exe --v-flow-type=FIXED\(32,16\)  --v-type=FIXED\(32,16\) --p-type=FIXED\(32,16\) input.txt
 
 
